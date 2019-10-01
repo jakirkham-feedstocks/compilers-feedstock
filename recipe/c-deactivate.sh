@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Restore environment variables from backups
+export CPPFLAGS="${COMPILERS_BACKUP_CPPFLAGS}"
+export CFLAGS="${COMPILERS_BACKUP_CFLAGS}"
+export LDFLAGS="${COMPILERS_BACKUP_LDFLAGS}"
+
+# Clear backups
+unset COMPILERS_BACKUP_CPPFLAGS
+unset COMPILERS_BACKUP_CFLAGS
+unset COMPILERS_BACKUP_LDFLAGS
